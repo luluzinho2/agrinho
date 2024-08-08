@@ -1,0 +1,112 @@
+/* Estilo Geral */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #121212; /* Modo escuro */
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+}
+
+/* Cabeçalho (Header) */
+header {
+    background-color: #333;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza a barra de navegação */
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Seções */
+.home, .desafios, .trabalho-campo, .alunos, .desmatamento {
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    max-width: 800px; /* Limita a largura para melhor centralização */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do Contêiner de Texto */
+.content-box {
+    background-color: #333; /* Fundo cinza */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Espaço abaixo do conteúdo */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Imagens */
+.home img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.desafios img, .desmatamento img {
+    width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Imagem dos Alunos */
+.alunos img {
+    display: block;
+    margin: 20px auto; /* Alinha a imagem ao centro e adiciona espaço em volta */
+    max-width: 150px; /* Ajusta o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Imagens do Rodapé */
+.footer-images img {
+    width: auto; /* Mantém a proporção da imagem */
+    height: 80px; /* Altura fixa para as imagens do rodapé */
+    border-radius: 8px;
+    margin: 0 10px; /* Espaçamento entre as imagens */
+}
+
+/* Rodapé (Footer) */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    flex-shrink: 0; /* Impede que o rodapé encolha */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Ajusta as imagens se não couberem em uma linha */
+}
